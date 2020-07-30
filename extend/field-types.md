@@ -46,7 +46,7 @@ You can tell whether field content has changed by calling [isFieldDirty()](<api:
 ```php
 public function afterElementSave(ElementInterface $element, bool $isNew)
 {
-    if ($element->isFieldDirty()) {
+    if ($element->isFieldDirty($this->handle)) {
         // logic for handling saved element
     }
 
